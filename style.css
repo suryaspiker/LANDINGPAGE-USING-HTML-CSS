@@ -1,0 +1,86 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://img.freepik.com/premium-vector/man-holding…keting-strategy-client-attraction_530733-3587.jpg);
+    background-size: cover;
+    background-position:center;
+}
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+}
+header .container{
+    height: 10vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 35px;
+    width: 30px;
+}
+.logo p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 200px;
+    font-weight: 500;
+    cursor: default;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ul{
+    display: flex;
+    gap: 14px;
+    list-style: none;
+}
+li{
+    font-size: 20px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+	border-top: 5px solid #009578;
+	border-bottom: 5px solid #009578;
+}
+
+.todo {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+}
+
+.todo__value {
+	background: transparent;
+	border: none;
+	outline: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	flex-grow: 1;
+}
+
+.todo:has(.todo__checkbox:checked) {
+	color: #555555;
+	background: #eeeeee;
+	text-decoration: line-through;
+	order: 1;
+}
